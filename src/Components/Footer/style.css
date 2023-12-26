@@ -1,0 +1,147 @@
+.footer {
+    background-color: #111822;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 20px 60px 50px;
+    column-gap: 2rem;
+    align-items: normal;
+}
+
+.footer .footer-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+    transform: calc(100% - 300px);
+    width: 100%;
+}
+
+
+.footer .footer-section .section p {
+    padding: 15px 0px;
+    color: #949494;
+}
+
+.footer .footer-section .section .contct-info li {
+    padding: 2px 0px;
+    color: #949494;
+}
+
+.footer .footer-section .section .contct-info li span {
+    color: #949494;
+    transition: all .5s ease;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.footer .footer-section .section .contct-info li span:hover {
+    color: #25B88C;
+}
+
+.footer .footer-section .section {
+    width: 100%;
+    height: auto;
+}
+
+.footer .footer-section .section h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer .footer-section .section a {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    color: #949494;
+    transition: .4s ease;
+    font-size: 15px;
+}
+
+.footer .footer-section .section a:hover {
+    color: #25B88C;
+}
+
+.footer .footer-section .right-section p {
+    padding: 15px 0px;
+    color: #949494;
+}
+
+.footer .footer-section .section .input-box {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin: 15px 0px;
+}
+
+.footer .footer-section .section .input-box input {
+    width: 150px;
+    height: 50px;
+    background-color: #282F3A;
+    border: none;
+    outline: none;
+    color: #949494;
+    border-radius: 6px;
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+.footer .footer-section .section .input-box .button {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background: red;
+    background: linear-gradient(to left, #EE4A62 50%, #25B88C 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer .footer-section .section .input-box .button:hover {
+    background-position: left;
+    color: #fff;
+}
+
+
+.footer .footer-section .section .input-box .button .arrow-right {
+    margin-left: 10px;
+}
+
+
+/* Footer - sm */
+
+.footer-sm {
+    width: 100%;
+    background-color: #111822;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #282F3A;
+    padding: 10px;
+}
+
+.footer-sm p {
+    color: #949494;
+}
+
+.footer-sm p a {
+    color: #25B88C;
+}
+
+
+
+@media(max-width:768px) {
+    .footer .footer-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 15px;
+        transform: calc(100% - 300px);
+        width: 100%;
+    }
+}

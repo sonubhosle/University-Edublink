@@ -1,0 +1,223 @@
+.academic-section {
+    width: 100%;
+    height: auto;
+    background-color: #020B17;
+    position: relative;
+    padding: 80px 0px;
+}
+
+.academic-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.academic-section .academic-menu {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.academic-menu .btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    column-gap: 1.5rem;
+}
+
+
+
+.menu-name {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 0px;
+    border: #575757;
+    background-color: #1C242F;
+    transition: .4s ease;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+
+
+}
+
+.menu-name:hover,
+.active {
+    color: #fff;
+    background-color: #EE4A62;
+}
+
+.academic-menu .academic-cources {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+.academic-cources .item-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.academic-cources .item-box .box {
+    background-color: #1C242F;
+    width: 300px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.academic-cources .item-box .box .img-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.academic-cources .item-box .box .img-box img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.academic-cources .box:hover .img-box img {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.academic-cources .item-box .box .img-box .mode {
+    position: absolute;
+    top: 10px;
+    background-color: #F8B81F;
+    left: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: .2rem;
+}
+
+.academic-cources .content-info {
+    background-color: #1C242F;
+    transition: .5s ease;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+}
+
+.academic-cources .box:hover .content-info {
+    transform: translateY(-65px);
+}
+
+.academic-cources .content-info .related {
+    background-color: #ee4a635e;
+    color: #EE4A62;
+    border-radius: 3px;
+    width: 80px;
+    height: 23px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.academic-cources .content-info .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+
+.academic-cources .content-info .desc {
+    font-size: 14px;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+.academic-cources .content-info .rating {
+    column-gap: 0.4rem;
+
+}
+
+.academic-cources .content-info .rating .views {
+    color: #fff;
+}
+
+.box .content-info .hover-button {
+    height: 40px;
+    width: 140px;
+    color: white;
+    background: red;
+    background: linear-gradient(to left, #EE4A62 50%, #25B88C 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    margin-top: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -100px;
+    left: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.box .content-info .hover-button:hover {
+    background-position: left;
+    color: #fff;
+}
+
+
+.box .content-info .hover-button .arrow-right {
+    margin-left: 10px;
+}
+
+.academic-cources:hover .hover-button {
+    opacity: 1;
+    visibility: visible;
+    bottom: -50px;
+    margin-top: 20px;
+}
+
+@media(max-width:1024px){
+    .academic-cources .item-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:991px){
+    .academic-menu .btn {
+        text-align: center;
+        display: block;
+        justify-content: center;
+        margin: 30px 0px;
+        row-gap: 1.5rem;
+        
+    }
+    .menu-name{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:991px){
+
+    .academic-cources .item-box .box {
+
+        width: 350px;
+    
+}
+}

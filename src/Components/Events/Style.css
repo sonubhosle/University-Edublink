@@ -1,0 +1,252 @@
+.event-section {
+    position: relative;
+}
+
+.event-header {
+    width: 30%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+
+.event-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.event-box .e-box {
+    background-color: #1C242F;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.event-box .e-box .img-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.event-box .e-box .img-box img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.e-box:hover .img-box img {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.event-box .e-box .img-box .mode {
+    position: absolute;
+    top: 10px;
+    background-color: #F8B81F;
+    left: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: .2rem;
+}
+
+.e-box .content-info {
+    background-color: #1C242F;
+    transition: .5s ease;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+}
+
+
+.e-box:hover .content-info {
+    transform: translateY(-65px);
+}
+
+
+
+.e-box .content-info .date-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    background-color: #25B88C;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+.e-box .content-info .date-box .date {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.e-box .content-info .date-box .big {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.e-box .content-info .location {
+    display: flex;
+    align-items: center;
+    color: #a3a3a3;
+    font-size: 15px;
+}
+
+
+.e-box .content-info .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+
+.e-box .content-info .desc {
+    font-size: 14px;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+.e-box .content-info .rating {
+    column-gap: 0.4rem;
+
+}
+
+.e-box .content-info .rating .views {
+    color: #fff;
+}
+
+.e-box .hover-button {
+    height: 40px;
+    width: 140px;
+    color: white;
+    background: linear-gradient(to left, #EE4A62 50%, #25B88C 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    margin-top: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -100px;
+    left: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.e-box .hover-button:hover {
+    background-position: left;
+    color: #fff;
+}
+
+
+.e-box .hover-button .arrow-right {
+    margin-left: 10px;
+}
+
+.event-box:hover .hover-button {
+    opacity: 1;
+    visibility: visible;
+    bottom: -50px;
+    margin-top: 20px;
+
+
+}
+
+
+/* Brand Section */
+
+.brand-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 60px 0px;
+}
+
+.brand-section p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+.brand-section p a {
+    color: #EE4A62;
+    margin-left: 6px;
+    transition: .5s ease;
+    border-bottom: 1px solid #1C242F;
+}
+
+.brand-section p a:hover {
+    color: #25B88C;
+    border-bottom: 1px solid #25B88C;
+}
+
+.brand {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.brand img{
+    padding: 10px;
+    width: 150px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition:  .4s ease;
+}
+.brand img:hover{
+    box-shadow: rgba(28, 36, 47, 0.478) 0px 0px 10px 0px;
+}
+@media(max-width:768px){
+   
+.event-header {
+    width: 70%;
+
+}
+.brand {
+    width: 98%;
+}
+
+.brand-section p {
+    display: block;
+    text-align: center;
+}
+
+
+}
+
+@media(max-width:350px){
+    .brand {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,47 @@
+.class-details {
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem
+}
+
+.class-details .section {
+    background-color: #1C242F;
+    padding: 10px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.class-details .section .big-title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.class-details .section .sm-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.class-details .section .green {
+    color:#1AB69D ;
+}
+
+.class-details .section .pink {
+    color:#EE4A62 ;
+}
+
+.class-details .section .blue {
+    color:#8E56FF ;
+}
+
+.class-details .section .org {
+    color:#F8941F ;
+}

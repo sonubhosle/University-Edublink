@@ -1,0 +1,143 @@
+.certificate-section {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #020B17;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.certificate-section .top-images {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.certificate-section .top-images .circle {
+    width:  150px;
+    height: 150px;
+    position: absolute;
+    right: -70px;
+    top: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.certificate-section:hover .top-images .circle {
+    transform: translateX(20px) translateY(-20px);
+}
+
+.certificate-section .top-images .green-circle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.certificate-section:hover .top-images .green-circle {
+    transform: translateY(20px) translateX(-20px);
+}
+
+
+.certificate-section .bottom-images {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+.certificate-section .bottom-images .pink {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.certificate-section:hover .bottom-images .pink {
+    transform: translateX(20px) translateY(-20px);
+}
+
+.certificate-section .bottom-images .wave {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 100px;
+    bottom: 70px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.certificate-section:hover .bottom-images .wave{
+    transform: translateY(20px) translateX(-20px);
+}
+
+
+
+
+.hover-button {
+    height: 60px;
+    width: 200px;
+    color: white;
+    background: red;
+    background: linear-gradient(to left, #EE4A62 50%, #25B88C 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    margin-top: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-button:hover {
+    background-position: left;
+    color: #fff;
+}
+
+
+.hover-button .arrow-right {
+    margin-left: 10px;
+}
+
+
+@media(max-width:768px){
+    .certificate-section .top-images .circle {
+        width:  100px;
+        height: 100px;
+
+    
+    }
+    .certificate-section .top-images .green-circle {
+        width:  100px;
+        height: 100px;
+    
+    }
+    
+.certificate-section .bottom-images .pink {
+    width: 100px;
+    height: 100px;
+
+}
+
+.certificate-section .bottom-images .wave {
+    width: 50px;
+    height: 30px;
+    bottom: 30px;
+    left: 50px;
+
+
+}
+.heading{
+    font-size: 25px;
+}
+}
